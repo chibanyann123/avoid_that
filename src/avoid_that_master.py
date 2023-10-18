@@ -38,4 +38,4 @@ if __name__=='__main__':
                               Navi(),
                               transitions = {"Navi_end":"fmm_end"})
        
-
+outcoms = sm.execute()  
