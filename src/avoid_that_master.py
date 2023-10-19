@@ -12,7 +12,7 @@ class Door(smach.State):
         self.enter_room = rospy.ServiceProxy('/enter_room_server',EnterRoom)
     
     def execute(self,_):
-        self.enter_room(1.0,0.3)
+        self.enter_room(2.0,0.3)
         return 'Door_end'
     
 
