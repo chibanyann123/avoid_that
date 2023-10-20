@@ -22,7 +22,7 @@ class Navi(smach.State):
         self.nav = rospy.ServiceProxy('/navi_location_server',NaviLocation)
     
     def execute(self,_):
-        self.navi = ('living')
+        self.navi = ('shelf')
         return 'Navi_end'
 
 if __name__=='__main__':
